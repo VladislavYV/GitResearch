@@ -15,6 +15,13 @@ h1 {
 }
 
 p {
+    position: relative;
     font-size: 20px;
     color: #fff;
+}
+
+p::after {
+    content: '';
+    position: absolute;
+    background-color: rgb(253, 215, 0);
 }
