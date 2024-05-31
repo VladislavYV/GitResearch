@@ -5,8 +5,11 @@ html {
     background-color: rgb(80, 80, 80);
 }
 
-h1, p {
-    text-align: center;
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
@@ -24,4 +27,16 @@ p::after {
     content: '';
     position: absolute;
     background-color: rgb(253, 215, 0);
+    height: 100%;
+    width: 5px;
+    right: -20px;
+}
+
+p::before {
+    content: '';
+    position: absolute;
+    background-color: rgb(253, 215, 0);
+    height: 100%;
+    width: 5px;
+    left: -20px;
 }
